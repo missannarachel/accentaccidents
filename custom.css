@@ -1,0 +1,127 @@
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+body {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  font: 'Montserrat', open sans, roboto;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Step 2: Reference Individual Icons */
+.login::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+}
+
+/* Note: Make sure to include the correct weight and Unicode value for the icon */
+.tps::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f1ea";
+}
+
+
+
+/* Changes the style of the overall form */
+#mc_embed_signup {
+    background: #aaaaaa;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adds extra space around the input boxes */
+#mc_embed_signup .mc-field-group {
+    padding: 10px 0;
+    float: left;
+}
+
+/* Styles the input boxes */
+#mc_embed_signup  input {
+    width: 200px;
+}
+
+/* Styles the subscribe button */
+#mc_embed_signup .button {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.email {
+  background: #aaaaaa;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.element1 {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+hr.style1{
+  border-top: 1px solid #8c8b8b;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
